@@ -50,6 +50,7 @@ const getAllProducts = async (req, res) => {
 
 const getAllProductsTesting = async (req, res) => {
 //   console.log(req.query);
+//   const myData = await Product.find(req.query).select('name company');
   const myData = await Product.find(req.query).skip(2);
   // sort = name,price;
 
